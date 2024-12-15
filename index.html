@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHMORBY - Vente et Location de Livres</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+        }
+
+        header h1 {
+            margin: 0;
+            margin-left: 20px;
+        }
+
+        .book {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px;
+            display: inline-block;
+            width: 300px;
+        }
+
+        .book img {
+            width: 100px;
+            height: 150px;
+        }
+
+        .button-3d {
+            padding: 10px 20px;
+            margin: 10px;
+            color: #fff;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 5px #999;
+            transition: all 0.3s ease;
+        }
+
+        .button-3d:hover {
+            background-color: darkblue;
+        }
+
+        .button-3d:active {
+            box-shadow: 0 2px #666;
+            transform: translateY(4px);
+        }
+
+        .button-gold {
+            background-color: gold;
+            color: black;
+        }
+
+        .payment-options {
+            display: none;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .payment-options img {
+            width: 100px;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+    <script>
+        function showPaymentOptions() {
+            document.getElementById('payment-options').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>SHMORBY - Vente et Location de Livres</h1>
+    </header>
+    <main>
+        <div class="book">
+            <h2>Terre de Wikola</h2>
+            <img src="https://2.bp.blogspot.com/-gC2p01DlUCU/XGyUYdc4z2I/AAAAAAAAAJI/JRR5wXDfjzoQNjc6XEFUVBHFxFPeKJ2PwCLcBGAs/s1600/6114.jpg" alt="Terre de Wikola">
+            <p>Auteur: Amr Abdel Hamid</p>
+            <p>Prix: 5 dollars</p>
+            <button class="button-3d" onclick="showPaymentOptions()">Acheter</button>
+            <button class="button-3d button-gold" onclick="showPaymentOptions()">Louer</button>
+        </div>
+        <div class="book">
+            <h2>La Peur</h2>
+            <img src="https://librairiesolidarite.com/data/%D8%AE%D9%88%D9%81.jpg" alt="La Peur">
+            <p>Auteur: Osama Al-Muslim</p>
+            <p>Prix: 5 dollars</p>
+            <button class="button-3d" onclick="showPaymentOptions()">Acheter</button>
+            <button class="button-3d button-gold" onclick="showPaymentOptions()">Louer</button>
+        </div>
+
+        <div id="payment-options" class="payment-options">
+            <h3>Options de Paiement</h3>
+            <img src="https://logodix.com/logo/303344.jpg" alt="PayPal">
+            <img src="https://www.parissportif-afrique.com/cache/payment/payment-method-payeer-image_94.svg" alt="Payeer">
+            <img src="https://vegestar.co.nz/wp-content/uploads/2021/06/https___blogs-images.forbes.com_steveolenski_files_2016_07_Mastercard_new_logo-1200x865-1.jpg" alt="MasterCard">
+            <img src="https://www.reussir-mon-ecommerce.fr/wp-content/uploads/2016/03/logo-visa-carte-1-300x300.png" alt="Visa">
+        </div>
+    </main>
+</body>
+</html>
